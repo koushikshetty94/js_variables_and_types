@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks = +prompt("enter the marks");
+        switch(true){
+            case (marks > 90):alert("grade is AA");
+            break;
+            case(marks > 80 || marks <= 90): alert("grade is AB");
+            break;
+            case(marks > 70 || marks <= 80): alert("grade is BB");
+            break;
+            case(marks > 60 || marks <= 70): alert("grade is BC");
+            break;
+            case(marks > 50 || marks <= 60): alert("grade is CC");
+            break;
+            case(marks > 40 || marks <= 50): alert("grade is CD");
+            break;
+            case(marks > 30 || marks <= 40): alert("grade is DD");
+            break;        
+            case(marks <= 30): alert("grade is FF")
+            break;
+            default:alert("invalid");
+            break;
+        }
+    </script>
+</body>
+</html>

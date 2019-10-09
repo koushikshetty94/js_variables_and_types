@@ -18,6 +18,33 @@
 // e.g “Learning is fun” should output will be 15.
 
 // Challenge 6.
-var city = "Dharamshala";
-var country = "India";
+// var city = "Dharamshala";
+// var country = "India";
 // Alert the above variable like "Dharamshala, India";
+    // challenge 1.
+    console.log("i'm learning javascript"); 
+   
+    // challenge 2.
+    let admin;
+    let name;
+    name = "john";
+    admin = name;
+    alert(admin);
+
+    // challenge 3.
+    alert("Hello world");
+    
+    // challenge 4.
+    let name1=prompt("enter your name");
+    alert(`welcome ${name1}`);
+  
+    //  challenge 5.
+      let name2=prompt("enter your name");
+      n= name2.length;
+      alert(`${n}`);
+    
+      //   challenge 6.
+      var city = "Dharamshala";
+      var country = "India";
+      alert(`${city},${country}`);
+    
