@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const SPENDING_THRESHOLD = 200;
+        const TAX_RATE = 0.08;
+        const PHONE_PRICE = 99.99;
+        const ACCESSORY_PRICE = 9.99;
+
+        var bank_balance = 303.91;
+        var amount = 0;
+
+        while(amount < bank_balance){
+
+            amount = PHONE_PRICE + amount;
+            
+            if(amount < SPENDING_THRESHOLD){
+
+                amount = amount + ACCESSORY_PRICE;
+            }
+        }
+        function calculateTax(){
+
+        var totalAmount = amount + (amount * TAX_RATE);
+        return totalAmount;
+
+        }
+        
+
+         if(calculateTax.totalAmount < bank_balance)
+         {
+             alert(" you can afford it");
+         }
+         else{
+             alert("you cannot afford it");
+         }
+
+         function formatAmount(){
+            return calculateTax().toFixed(2);
+            
+         }
+         formatAmount();
+    </script>
+</body>
+</html>
