@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1=Number(prompt("enter number 1"));
+        let num2=Number(prompt("enter number 2"));
+        let num3;
+        let operation=prompt("enter operation: 1.+,2.*,3./,4.-");
+        if(num1>num2)
+        {
+            num1=num1;
+            num3=num2;
+        }
+        else{
+            num3=num2;
+            num2=num1;
+            num1=num3;
+        }
+        if (operation==1)
+        { 
+                
+            alert(num1+num2);
+        }
+        else if (operation==2){
+            alert(num1*num2);
+        }
+        else if (operation==3){
+            alert(num3/num2);
+        }
+        else if (operation==4){
+            alert(num3-num2);
+        }
+        else{
+            alert("invalid choice");
+        }
+        </script>
+// </body>
+// </html>
